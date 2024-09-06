@@ -1,268 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation bar styling */
-        nav {
-            background-color: #004080;
-            overflow: hidden;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            flex: 1;
-        }
-
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color: #00264d;
-        }
-
-        
-        main {
-            padding: 20px;
-        }
-
-        h2 {
-            border-bottom: 2px solid #004080;
-            padding-bottom: 5px;
-        }
-
-        
-        aside {
-            background-color: #f4f4f4;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-       
-        footer {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #e6f2ff;
-        }
-
-        
-        iframe, img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        
-        form {
-            margin: 20px 0;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        input[type="text"], input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0 10px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #004080;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #00264d;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider with Autoplay</title>
+  <link rel="stylesheet" href="pratices.css">
 </head>
 <body>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <img src="../shoes2.webp" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="../shoes3.avif" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="../shoes4.jpg" alt="Slide 3">
+      </div>
+      <div class="slide">
+        <img src="../shoes7.webp" alt="Slide 4">
+      </div>
+    </div>
+  </div>
 
+ 
+  <div class="controls">
+    <button id="pause">Pause</button>
+    <button id="resume">Resume</button>
+  </div>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#resources">Student Resources</a></li>
-        <li><a href="#timetable">Timetable</a></li>
-        <li><a href="#assignments">Assignments</a></li>
-        <li><a href="#help">Help</a></li>
-    </ul>
-</nav>
-
-
-<main>
-    <section id="home">
-        <h2>Welcome to the Student Portal</h2>
-        <p>This portal provides access to essential student resources, timetables, assignments, and more.</p>
-    </section>
-
-    <section id="resources">
-        <h2>Student Resources</h2>
-        
-        <h3>1. Visit the Library</h3>
-        <p><a href="https://openlibrary.org/collections/k-12" target="_blank">Go to Online Library</a></p>
-
-        <h3>2. Contact the Student Office</h3>
-        <p><a href="mailto:studentoffice@example.com?subject=Support Request">Email the Student Office</a></p>
-
-        <h3>3. Jump to the Help Section</h3>
-        <p><a href="#help">Go to Help</a></p>
-    </section>
-
-    <section id="timetable">
-        <h2>Timetable</h2>
-
-        <h3>4. Class Schedule</h3>
-        <table>
-            <tr>
-                <td rowspan="2">Monday</td>
-                <td>8:00 AM - Math</td>
-                <td>9:00 AM - English</td>
-            </tr>
-            <tr>
-                <td colspan="2">10:00 AM - Science</td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>8:00 AM - History</td>
-                <td>9:00 AM - PE</td>
-            </tr>
-        </table>
-
-        <h3>5. Semester Overview</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Subject</th>
-                    <th>Teacher</th>
-                    <th>Room</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Math</td>
-                    <td>Mr. Smith</td>
-                    <td>Room 101</td>
-                </tr>
-                <tr>
-                    <td>English</td>
-                    <td>Ms. Johnson</td>
-                    <td>Room 202</td>
-                </tr>
-                <tr>
-                    <td>Science</td>
-                    <td>Dr. Brown</td>
-                    <td>Room 303</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">End of Semester</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
-
-    <section id="assignments">
-        <h2>Assignments</h2>
-
-        <h3>7. Upcoming Assignments</h3>
-        <ol start="5">
-            <li>Research Paper - Due October 15th</li>
-            <li>Math Project - Due October 22nd</li>
-            <li>Science Experiment - Due October 29th</li>
-        </ol>
-    </section>
-
-    <section id="help">
-        <h2>Help and Tutorials</h2>
-
-        <h3>8. Watch a Tutorial</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=iKyZy7OXwwc" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section id="feedback">
-        <h2>Feedback</h2>
-
-        <h3>9. Submit Your Feedback</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-
-            <label for="terms">
-                <input type="checkbox" id="terms" name="terms">
-                I agree to the terms and conditions
-            </label>
-
-            <input type="submit" value="Submit Feedback">
-        </form>
-    </section>
-
-    <aside>
-        <h3>Student Announcements</h3>
-        <p>Check here for the latest student announcements and updates.</p>
-    </aside>
-</main>
-
-
-<footer>
-    <p>&copy; 2024 Student Portal. All rights reserved.</p>
-</footer>
-
+  <script src="pratices.js"></script>
 </body>
 </html>
