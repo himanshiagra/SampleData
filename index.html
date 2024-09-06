@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    .static-box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Relative-box {
+      height: 500px;
+      width: 500px;
+      position: relative;
+      background-color: aqua;
+    }
+    .absolute-box {
+      height: 300px;
+      width: 300px;
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      background-color: antiquewhite;
+    }
+  </style>
+  <body>
+    <!-- <div class="static-box">Static Position</div> -->
+    <div class="Relative-box">i am relative container</div>
+    <div class="absolute-box">i am absolute to the relative container</div>
+  </body>
+</html>
